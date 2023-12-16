@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "name": "Basic Membership",
+        "price": 50,
+        "features": [
+            "Cardio Access",
+            "Weights Section",
+            "Basic Classes",
+            "Locker Room"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Premium Membership",
+        "price": 80,
+        "features": [
+            "Full Gym Access",
+            "Unlimited Classes",
+            "Personal Trainer (2/month)",
+            "Sauna & Spa"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "VIP Membership",
+        "price": 120,
+        "features": [
+            "24/7 Access",
+            "Unlimited Trainer Sessions",
+            "VIP Lounge",
+            "Towel Service",
+            "Free Protein Shakes"
+        ]
+    }
+]
