@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import axios from 'axios';
 
 const PhoneBar = () => {
@@ -23,21 +23,23 @@ const PhoneBar = () => {
             })
     }, [])
     return (
-        <div>
-            
-                <BarChart
-                    width={1000}
-                    height={500}
-                    data={phones}
-                >
+
+        <div style={{ width: "100%", height: "500px" }}>
+            <ResponsiveContainer>
+                <BarChart data={phones}>
+                    <CartesianGrid strokeDasharray='3 3' />
                     <Bar dataKey="price" fill="#8884d8" />
                     <XAxis dataKey='name' />
                     <YAxis />
                     <Tooltip></Tooltip>
-
                 </BarChart>
-           
+            </ResponsiveContainer>
+
         </div>
+
+
+
+
     );
 };
 

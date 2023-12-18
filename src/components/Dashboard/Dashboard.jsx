@@ -92,18 +92,16 @@ const Dashboard = () => {
 
 
     return (
-        <div>
-            <LineChart
-                width={1000}
-                height={300}
-                data={students}
-            >
-                <Line dataKey='physics'></Line>
-                <Line stroke="#82ca9d" dataKey='math'></Line>
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip></Tooltip>
-            </LineChart>
+        <div style={{ width: "100%", height: "300px" }}>
+            <ResponsiveContainer>
+                <LineChart data={students}>
+                    <Line dataKey='physics'></Line>
+                    <Line stroke="#82ca9d" dataKey='math'></Line>
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip></Tooltip>
+                </LineChart>
+            </ResponsiveContainer>
         </div>
     );
 };
